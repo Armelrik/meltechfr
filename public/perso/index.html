@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Data - Power BI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* --- HEADER --- */
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #87ceeb;
+    }
+
+    /* --- HERO --- */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* --- PROJETS --- */
+    .projects {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .project {
+      margin-bottom: 3rem;
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    .project h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    .project p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 700px;
+      border-radius: 10px;
+    }
+
+    /* --- CONTACT --- */
+    .contact {
+      padding: 3rem 2rem;
+      background: rgba(0,0,0,0.4);
+      text-align: center;
+    }
+    .contact h3 {
+      margin-bottom: 1rem;
+    }
+    .contact p {
+      font-size: 1rem;
+    }
+    .contact a.button {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      margin-top: 1rem;
+      background: #87ceeb;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .contact a.button:hover {
+      background: #00bfff;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0,0,0,0.6);
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Armel's Data Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / ACCUEIL -->
+  <section id="accueil" class="hero">
+    <h2>Bienvenue sur mon Portfolio Data</h2>
+    <p>Découvrez mes projets Power BI et mes intégrations de données en temps réel.</p>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="projects">
+
+    <!-- Projet Météo -->
+    <div class="project">
+      <h3>Dashboard Prévisions Météo</h3>
+      <p>Un rapport interactif utilisant l’API OpenWeatherMap pour visualiser les prévisions météo.</p>
+      <iframe 
+          title="Dashboard Météo" width="600" height="373.5" 
+          src="https://app.powerbi.com/view?r=eyJrIjoiYjk5OWQ1YjUtZjE0ZC00ODA2LWE2OTctMjc1YmE1ZTAzMzE4IiwidCI6IjViYjdiZDcyLTNiZDgtNDc1YS04YWJjLWQxZWU0MDI5MWIzMiJ9&pageName=d7ca3fbd04a271a6c47b" 
+          frameborder="0" allowFullScreen="true">
+      </iframe>
+    </div>
+
+        <!-- Projet Total Énergie -->
+    <div class="project">
+      <h3>Refonte du rapport Total Énergie</h3>
+      <p>Un tableau de bord modernisé pour suivre la consommation et production énergétique.</p>
+      <iframe 
+          title="Cockpit TE v8" width="600" height="373.5" 
+          src="https://app.powerbi.com/view?r=eyJrIjoiZWM1MjEwMjEtMTI2Yi00YjMwLTk5MzUtZjc2ODdmZjdlYmMzIiwidCI6IjViYjdiZDcyLTNiZDgtNDc1YS04YWJjLWQxZWU0MDI5MWIzMiJ9&pageName=43bb228e030ac8b9140c" 
+          frameborder="0" allowFullScreen="true">
+      </iframe>
+    </div>
+
+    <!-- Projet Total Énergie -->
+    <div class="project">
+      <h3>Rapport de gestion du CB</h3>
+      <p>Rapport épuré pour suivre les demandes de prêts.</p>
+        <iframe title="Exo_Demande_Prets" width="1140" height="541.25" 
+          src="https://app.fabric.microsoft.com/reportEmbed?reportId=55e5fe85-f8b0-4a59-b1e9-25e824e2122a&autoAuth=true&ctid=5bb7bd72-3bd8-475a-8abc-d1ee40291b32&actionBarEnabled=true" frameborder="0" allowFullScreen="true">
+        </iframe>
+        
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h3> Me Contacter</h3>
+    <p>Email : <a href="mailto:armelrik@hotmail.com" style="color:#87ceeb;">armelrik@hotmail.com</a></p>
+    <p>LinkedIn : <a href="https://www.linkedin.com/in/armel-theophile-kima/" target="_blank" style="color:#87ceeb;">Mon profil</a></p>
+
+    <!-- Bouton Télécharger CV -->
+    <p>
+      <a href="CV_2025-09-23_ARMEL THEOPHILE_KIMA.pdf" class="button" download>Télécharger mon CV</a>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 - Portfolio Data by Armel
+  </footer>
+
+</body>
+</html>
