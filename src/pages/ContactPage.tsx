@@ -151,7 +151,7 @@ ${formData.description}
                   <div>
                     <h3 className="font-semibold mb-1">Adresse</h3>
                     <p className="text-muted-foreground">
-                      50 rue Saint-Exupery
+                      Rue Saint-Exupery
                       <br />
                       78500 Sartrouville, France
                     </p>

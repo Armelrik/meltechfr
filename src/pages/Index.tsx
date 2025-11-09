@@ -7,6 +7,7 @@ import AISuggestion from "@/components/AISuggestion";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import ContactPage from "./ContactPage";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Services />
       <AISuggestion />
       <Pricing />
+      <ContactPage />
       <Testimonials />
       <Footer />
     </div>
