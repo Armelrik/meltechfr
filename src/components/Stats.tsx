@@ -1,9 +1,9 @@
 const Stats = () => {
   const stats = [
-    { value: "150+", label: "Projets réalisés" },
+    { value: "15+", label: "Projets réalisés" },
     { value: "98%", label: "Clients satisfaits" },
-    { value: "12", label: "Pays couverts" },
-    { value: "+300%", label: "Croissance moyenne" },
+    { value: "3", label: "Pays couverts" },
+    { value: "+100%", label: "Croissance moyenne" },
   ];
 
   return (
