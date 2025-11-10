@@ -19,9 +19,10 @@ const Index = () => {
       <Services />
       <AISuggestion />
       <Pricing />
-      <ContactPage />
       <Testimonials />
-      <Footer />
+      <ContactPage />
+
+      {/* <Footer /> */}
     </div>
   );
 };
