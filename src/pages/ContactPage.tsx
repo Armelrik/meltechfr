@@ -270,11 +270,11 @@ ${formData.description}
                       <SelectValue placeholder="Sélectionnez une fourchette" />
                     </SelectTrigger>
                     <SelectContent className="glass-strong border-white/20">
-                      <SelectItem value="<1k">Moins de 300€</SelectItem>
-                      <SelectItem value="1k-3k">300€ - 1000€</SelectItem>
-                      <SelectItem value="3k-5k">1000€ - 5000€</SelectItem>
-                      <SelectItem value="5k-10k">5000€ - 10000€</SelectItem>
-                      <SelectItem value="10k+">Plus de 10000€</SelectItem>
+                      <SelectItem value="<1k">190€</SelectItem>
+                      <SelectItem value="1k-3k">490€</SelectItem>
+                      <SelectItem value="3k-5k">500€ - 1000€</SelectItem>
+                      <SelectItem value="5k-10k">1000€ - 5000€</SelectItem>
+                      <SelectItem value="10k+">Plus de 5000€</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
