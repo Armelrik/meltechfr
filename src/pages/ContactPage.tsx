@@ -250,6 +250,7 @@ ${formData.description}
                         </SelectItem>
                         <SelectItem value="pack">Pack Site + App</SelectItem>
                         <SelectItem value="maintenance">Maintenance</SelectItem>
+                        <SelectItem value="maintenance">Formation</SelectItem>
                         <SelectItem value="other">Autre</SelectItem>
                       </SelectContent>
                     </Select>
