@@ -13,12 +13,20 @@ import ProtectedRoute from "./components/admin/ProtectedRoute";
 import MentionsLegales from "./pages/mentions-legales/page";
 import CGV from "./pages/cgv/page";
 import PolitiqueConfidentialite from "./pages/politique-confidentialite/page";
+import { Helmet } from "react-helmet-async";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      {/* <Helmet>
+        <title>Meltech France — Création de sites web et apps</title>
+        <meta
+          name="description"
+          content="Agence digitale créant des sites web modernes, applications mobiles et solutions Cloud pour entrepreneurs et entreprises."
+        />
+      </Helmet> */}
       <Toaster />
       <Sonner />
       <BrowserRouter>

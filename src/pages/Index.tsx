@@ -8,6 +8,7 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import ContactPage from "./ContactPage";
+import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   return (
@@ -21,6 +22,13 @@ const Index = () => {
       <Pricing />
       <Testimonials />
       <ContactPage />
+      <a
+        href="https://wa.me/33761930969"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 hover:scale-110 transition"
+        aria-label="WhatsApp"
+      >
+        W
+      </a>
 
       {/* <Footer /> */}
     </div>

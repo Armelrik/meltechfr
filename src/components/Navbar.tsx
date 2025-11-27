@@ -24,6 +24,7 @@ const Navbar = () => {
     { name: "Accueil", path: "/" },
     { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" },
+    { name: "Webmail", path: "https://mail.meltech.fr", external: true },
   ];
 
   const handleNavClick = (path: string) => {
