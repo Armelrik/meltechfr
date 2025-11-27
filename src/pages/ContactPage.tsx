@@ -221,7 +221,7 @@ ${formData.description}
                     </label>
                     <Input
                       type="tel"
-                      placeholder="+33 6 12 34 56 78"
+                      placeholder="+33 6 00 00 00 01"
                       value={formData.phone}
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })

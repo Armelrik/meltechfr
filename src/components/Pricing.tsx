@@ -9,52 +9,52 @@ const Pricing = () => {
     {
       name: "Starter",
       price: "190€",
-      period: "/mois",
-      description: "Parfait pour démarrer votre présence digitale",
+      period: "",
+      description: "Idéal pour une première présence en ligne professionnelle",
       features: [
-        "Site vitrine responsive (5 pages)",
-        "Design personnalisé",
+        "Site vitrine responsive (jusqu’à 5 pages)",
+        "Design personnalisé selon votre marque",
+        "Formulaire de contact intelligent",
         "Optimisation SEO de base",
-        "Formulaire de contact",
         "Hébergement 1 an inclus",
-        "Support quotidient",
-        "2 Email profesionels",
+        "Création de 2 emails professionnels",
+        "Support et maintenance gratuits les 3 premiers mois",
+        "Option maintenance : dès 50€/mois ensuite",
       ],
       popular: false,
     },
     {
       name: "Pro",
       price: "490€",
-      period: "/mois",
-      description: "Pour des projets ambitieux et complets",
+      period: "",
+      description: "Conçu pour les entreprises ambitieuses",
       features: [
-        "Site web et app mobile complète",
+        "Site web complet + espace client ou admin",
         "Design sur mesure premium",
-        "SEO avancé & Analytics",
-        "Espace client / admin",
-        "Intégrations API",
-        "Formation incluse",
-        "Support prioritaire",
-        "Maintenance incluse",
-        "10 Emails profesionels",
+        "Optimisation SEO avancée & Google Analytics",
+        "Intégrations API & outils externes",
+        "Formation à la gestion du site",
+        "Hébergement 1 an inclus",
+        "10 emails professionnels",
+        "Support et maintenance gratuits 3 mois",
+        "Option maintenance : dès 100€/mois ensuite",
       ],
       popular: true,
     },
     {
       name: "Premium",
-      price: "Sur mesure",
-      period: "",
-      description: "Solution complète pour maximiser votre impact",
+      price: "Sur devis",
+      period: "Dès 1 000 €",
+      description: "Solution digitale complète et évolutive",
       features: [
-        "Site + App mobile (iOS & Android)",
+        "Site web + Application mobile (iOS & Android)",
         "Design & UX/UI premium",
         "Fonctionnalités avancées illimitées",
-        "Backend personnalisé",
-        "Intégrations complexes",
-        "Formation complète de l'équipe",
-        "Support & maintenance 12 mois",
-        "Évolutions continues",
-        "Email profesionels",
+        "Backend personnalisé et sécurisation avancée",
+        "Formation complète de l’équipe",
+        "Hébergement & support 1 an inclus",
+        "Évolutions continues et mises à jour planifiées",
+        "Option maintenance : dès 150€/mois après 3 mois offerts",
       ],
       popular: false,
     },
@@ -65,10 +65,11 @@ const Pricing = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Nos <span className="text-gradient">Prix</span>
+            Nos <span className="text-gradient">Packs One-Off</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Des tarifs transparents adaptés à vos besoins et votre budget
+            Des offres clés en main avec 3&nbsp;mois de maintenance gratuite,
+            puis un abonnement simple et flexible.
           </p>
         </div>
 
@@ -91,7 +92,7 @@ const Pricing = () => {
 
               <div className="mb-6">
                 <h3 className="text-2xl font-bold mb-2">{pack.name}</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground ">
                   {pack.description}
                 </p>
               </div>
@@ -121,7 +122,7 @@ const Pricing = () => {
               </ul>
 
               <Button
-                variant={pack.popular ? "secondary" : "link"}
+                variant={pack.popular ? "secondary" : "outline"}
                 size="lg"
                 className="w-full"
                 onClick={() => navigate("/contact")}

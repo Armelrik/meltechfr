@@ -81,12 +81,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/about"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   À propos
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -118,11 +118,11 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>+33 6 12 34 56 78</span>
+                <span>+33 7 61 93 09 69</span>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span> 78500 Sartrouville, France</span>
+                <span>78500 Sartrouville, France</span>
               </li>
             </ul>
           </div>
@@ -133,16 +133,25 @@ const Footer = () => {
           <div>
             © {new Date().getFullYear()} Meltech France. Tous droits réservés.
           </div>
+
           <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground transition-colors">
+            <Link
+              to="/mentions-legales"
+              className="hover:text-foreground transition-colors"
+            >
               Mentions légales
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
+            </Link>
+
+            <Link
+              to="/politique-de-confidentialite"
+              className="hover:text-foreground transition-colors"
+            >
               Politique de confidentialité
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
+            </Link>
+
+            <Link to="/cgv" className="hover:text-foreground transition-colors">
               CGV
-            </a>
+            </Link>
           </div>
         </div>
       </div>
