@@ -3,6 +3,7 @@ import App from "./App.tsx";
 import "./index.css";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import React from "react";
+import { HelmetProvider } from "react-helmet-async";
 
 // import { Analytics } from "@vercel/analytics/";
 
@@ -10,7 +11,9 @@ import React from "react";
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-    <SpeedInsights />
+    <HelmetProvider>
+      <App />
+      <SpeedInsights />
+    </HelmetProvider>
   </React.StrictMode>
 );
