@@ -10,6 +10,9 @@ import NotFound from "./pages/NotFound";
 import LoginPage from "./pages/admin/LoginPage";
 import DashboardPage from "./pages/admin/DashboardPage";
 import ProtectedRoute from "./components/admin/ProtectedRoute";
+import MentionsLegales from "./pages/mentions-legales/page";
+import CGV from "./pages/cgv/page";
+import PolitiqueConfidentialite from "./pages/politique-confidentialite/page";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +27,12 @@ const App = () => (
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/admin/login" element={<LoginPage />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route
+            path="/politique-de-confidentialite"
+            element={<PolitiqueConfidentialite />}
+          />
+          <Route path="/cgv" element={<CGV />} />
           <Route
             path="/admin/dashboard"
             element={
